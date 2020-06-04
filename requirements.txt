@@ -1,0 +1,6 @@
+# -e .
+
+requests
+gevent
+progressbar
+Crypto
