@@ -12,8 +12,8 @@
 
 
 ## 安装方法
-. 先在本机安装ffmpeg，【下载地址】（http://ffmpeg.org）
-. pip install -r requirements.txt
+1. 先在本机安装ffmpeg，[下载地址](http://ffmpeg.org)
+2. pip install -r requirements.txt
 
 
 ## 使用方法
