@@ -21,7 +21,7 @@ from StringIO import StringIO
 from urlparse import urlparse, urljoin
 from collections import OrderedDict
 from Crypto.Cipher import AES
-from binascii import b2a_hex, a2b_hex
+from binascii import a2b_hex
 
 # import multiprocessing
 
@@ -190,7 +190,6 @@ class FileDownloader(pool.Pool, FileMerger):
                     return self.parse_m3u8()
 
                 self.ts_url[urljoin(self.m3u8_url, line)] = cur_ext_x_codec
-        print len(self.ts_url)
 
         if os.path.isdir(self.video_name):
             done_index_list = [int(i.split(".ts")[0]) for i in os.listdir(self.video_name) if i.endswith(".ts")]
